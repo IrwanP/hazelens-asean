@@ -1,0 +1,6 @@
+{
+  "name": "HazeLens ASEAN",
+  "description": "Environmental Decision Intelligence for Southeast Asia — From environmental signals to early action.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

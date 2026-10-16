@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #080c14;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars for telemetry feeds */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b111c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Regional Evidence Map responsive viewport constraints (Req 1, 2) */
+.asean-map-stage,
+.asean-map-canvas {
+  width: 100%;
+  height: 420px;
+  min-height: 420px;
+}
+
+@media (min-width: 768px) {
+  .asean-map-stage,
+  .asean-map-canvas {
+    height: 520px;
+    min-height: 520px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .asean-map-stage,
+  .asean-map-canvas {
+    height: clamp(640px, 70vh, 760px);
+    min-height: 640px;
+  }
+}
