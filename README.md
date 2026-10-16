@@ -281,6 +281,96 @@ This allows users to distinguish:
 
 ---
 
+
+## Product Screenshots
+
+The screenshots below show the current HazeLens ASEAN product workflow using the deployed application. Together they demonstrate how HazeLens moves from regional environmental signals to community-level prioritization, evidence-grounded Gemini interpretation, and transparent provenance.
+
+### 1. Regional Situation Map
+
+The Situation view shows the regional environmental picture across Southeast Asia, including NASA FIRMS active-fire detections, source clusters, monitored communities, and transport context.
+
+It demonstrates the distinction between **where wildfire pressure originates** and **where downstream community impact may matter**.
+
+![HazeLens ASEAN Regional Situation Map](assets/screenshots/01.%20hazelens_asean_wildfire_map.png)
+
+### 2. Monitored Community Risk Comparison
+
+The Communities view compares selected receptor communities representing different exposure scenarios:
+
+- **Palangka Raya, Indonesia** - Near-source exposure
+- **Singapore** - Transboundary receptor
+- **Kuching, Malaysia** - Cross-border receptor
+
+Each community is assessed using the deterministic HazeLens Environmental Impact Risk model, with current risk tier, numerical score, confidence, 6-hour outlook, 24-hour outlook, primary driver, and recommended monitoring action.
+
+![HazeLens ASEAN Community Risk Dashboard](assets/screenshots/02.%20hazelens_asean_community_dashboard.png)
+
+### 3. Environmental Decision Intelligence
+
+The application converts fragmented environmental signals into a concise operational picture.
+
+The regional summary surfaces:
+
+- highest community impact,
+- strongest source pressure,
+- next decision window,
+- assessment confidence,
+- and the current environmental situation.
+
+This supports the transition from raw environmental observations to structured situational awareness.
+
+![HazeLens ASEAN Environmental Intelligence Dashboard](assets/screenshots/03.%20hazelens_asean_environmental_intelligence_dashboard.png)
+
+### 4. Gemini Decision Brief
+
+The AI Brief view demonstrates how Gemini interprets the already-calculated HazeLens evidence.
+
+The Decision Brief is structured into:
+
+- **WHAT IS HAPPENING**
+- **WHAT CHANGED**
+- **WHO NEEDS ATTENTION**
+- **NEXT 6-24 HOURS**
+- **RECOMMENDED AWARENESS**
+- **CONFIDENCE & LIMITATIONS**
+
+Gemini does not calculate or modify HazeLens numerical risk scores.
+
+![HazeLens ASEAN Gemini Decision Brief](assets/screenshots/04.%20hazelens_ai_brief_dashboard.png)
+
+### 5. Ask HazeLens
+
+Ask HazeLens allows users to interrogate the evidence behind the current assessment.
+
+Users can ask why a community is at a particular risk level, which evidence matters most, what changed, what conditions could improve, and what should be monitored next.
+
+Responses are grounded in the structured HazeLens evidence supplied to Gemini.
+
+![HazeLens ASEAN Ask HazeLens](assets/screenshots/05.%20hazelens_asean_ai_intelligence_brief.png)
+
+### 6. Evidence, Provenance and Audit Trail
+
+The Evidence view exposes the trust boundary behind the assessment.
+
+It shows:
+
+- environmental source or system,
+- sensor or upstream provider,
+- data retrieved,
+- update frequency,
+- provenance verification,
+- deterministic HazeLens calculations,
+- and the Gemini interpretation boundary.
+
+This allows users and evaluators to distinguish **source data**, **forecast**, **HazeLens-calculated values**, and **AI interpretation**.
+
+![HazeLens ASEAN Evidence Dashboard](assets/screenshots/06.%20hazelens_asean_evidence_dashboard.png)
+
+> **HazeLens calculates. Gemini interprets.**
+
+---
+
 # 5. Environmental Data Sources
 
 Data provenance is a core design principle of HazeLens ASEAN.
@@ -953,12 +1043,12 @@ The Evidence screen makes this boundary visible.
                   │                         │
                   ▼                         ▼
 ┌───────────────────────────┐    ┌───────────────────────────┐
-│ GEMINI ENVIRONMENTAL      │    │ GOOGLE MAPS              │
+│ GEMINI ENVIRONMENTAL      │    │ GOOGLE MAPS               │
 │ INTELLIGENCE              │    │                           │
 │                           │    │ • Active-fire detections  │
-│ • Decision Brief          │    │ • Source regions         │
-│ • Evidence explanation    │    │ • Communities            │
-│ • Ask HazeLens            │    │ • Transport vectors      │
+│ • Decision Brief          │    │ • Source regions          │
+│ • Evidence explanation    │    │ • Communities             │
+│ • Ask HazeLens            │    │ • Transport vectors       │
 └───────────────┬───────────┘    └─────────────┬─────────────┘
                 │                              │
                 └──────────────┬───────────────┘
