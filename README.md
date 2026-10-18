@@ -1342,7 +1342,7 @@ https://github.com/IrwanP/hazelens-asean
 
 ### Demo Video
 
-`ADD FINAL 3-MINUTE YOUTUBE DEMO LINK HERE`
+https://www.youtube.com/watch?v=3fN1Vs5mnNg
 
 ---
 
